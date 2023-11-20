@@ -2,6 +2,7 @@ import { StyleSheet, View } from 'react-native';
 import { HeaderView } from '../components/headerview'
 import { Title } from '../components/title';
 import { Card } from '../components/card';
+import { AddButton } from '../components/addbutton';
 
 export function Exames() {
   return (
@@ -9,6 +10,7 @@ export function Exames() {
       <HeaderView />
       <Title>Exames</Title>
       <Card />
+      <AddButton />
     </View>
   );
 }

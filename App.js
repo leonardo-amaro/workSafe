@@ -1,7 +1,7 @@
-import { Funcionarios } from "./src/pages/Funcionarios";
+import { ExamesRealizados } from "./src/pages/ExamesRealizados";
 
 export default function App() {
   return (
-    <Funcionarios />
+    <ExamesRealizados />
   );
 }

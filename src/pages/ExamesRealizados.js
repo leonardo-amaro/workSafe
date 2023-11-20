@@ -1,15 +1,15 @@
 import { StyleSheet, View } from 'react-native';
 import { HeaderView } from '../components/headerview'
 import { Title } from '../components/title';
-import { Card } from '../components/card';
+import { CardDate } from '../components/carddate';
 import { AddButton } from '../components/addbutton';
 
-export function Funcionarios() {
+export function ExamesRealizados() {
   return (
     <View style={styles.container}>
       <HeaderView />
-      <Title>Funcionários</Title>
-      <Card />
+      <Title>Exames Realizados</Title>
+      <CardDate />
       <AddButton />
     </View>
   );
