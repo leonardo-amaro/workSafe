@@ -1,10 +1,10 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-export function Card() {
+export function Card({ props }) {
   return (
     <View style={styles.card}>
       <Text style={styles.examName}>
-        Nome
+        {props.nome}
       </Text>
       <View style={styles.buttonArea}>
         <TouchableOpacity style={[styles.button, styles.buttonEdit]}>

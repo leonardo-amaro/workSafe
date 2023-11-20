@@ -2,13 +2,30 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { HeaderView } from '../components/headerview'
 import { Title } from '../components/title';
 import { Card } from '../components/card';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 export function Exames({ navigation }) {
+  const [exames, setExames] = useState([]);
+
+  useEffect(() => {
+    loadExams();
+  }, []);
+
+  const loadExams = async () => {
+    const result = await axios.get("http://localhost:8080/allexams");
+    setExames(result.data);
+  };
+
   return (
     <View style={styles.container}>
       <HeaderView />
       <Title>Exames</Title>
-      <Card />
+      {exames.map( exame => (
+        <Card
+          nome={exame.exam_name}
+        />
+      ) )}
       <View style={styles.buttonArea}>
         <TouchableOpacity style={styles.button} onPress={ () => navigation.navigate('ModalExam') }>
           <Text style={styles.buttonText}>
