@@ -2,18 +2,18 @@ import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-nativ
 import { HeaderView } from "../headerview";
 import { Title } from "../title";
 
-export function ModalExam({ navigation }) {
+export function ModalFuncionario({ navigation }) {
   return (
     <View style={styles.container}>
       <HeaderView />
-      <Title>Novo Exame</Title>
+      <Title>Novo Funcionário</Title>
       <View style={styles.buttonArea}>
         <Text style={{ fontSize: 16 }}>
-          Nome do exame
+          Nome do funcionário
         </Text>
         <TextInput
           style={styles.input}
-          placeholder="Nome do exame..."
+          placeholder="Nome do funcionário..."
         />
       </View>
       <View style={styles.buttonArea}>
