@@ -2,7 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { HeaderView } from '../components/headerview';
 import { Title } from '../components/title';
 
-export default function Home() {
+export function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <HeaderView />
@@ -10,17 +10,17 @@ export default function Home() {
         Seja bem vindo ao WorkSafe! Tenha total controle sobre a saúde ocupacional da sua empresa.
       </Title>
       <View style={styles.buttonArea}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={ () => navigation.navigate('Exames') }>
           <Text style={styles.buttonText}>
             Cadastro de exames
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={ () => navigation.navigate('Funcionarios') }>
           <Text style={styles.buttonText}>
             Cadastro de funcionários
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={ () => navigation.navigate('ExamesRealizados') }>
           <Text style={styles.buttonText}>
             Cadastro de exames realizados
           </Text>

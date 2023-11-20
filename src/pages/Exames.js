@@ -4,13 +4,13 @@ import { Title } from '../components/title';
 import { Card } from '../components/card';
 import { AddButton } from '../components/addbutton';
 
-export function Exames() {
+export function Exames({ navigation }) {
   return (
     <View style={styles.container}>
       <HeaderView />
       <Title>Exames</Title>
       <Card />
-      <AddButton />
+      <AddButton onPress={ () => navigation.goBack() } />
     </View>
   );
 }
