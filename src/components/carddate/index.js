@@ -1,13 +1,13 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-export function CardDate({ props }) {
+export function CardDate() {
   return (
     <View style={styles.card}>
       <Text style={styles.examName}>
-        {props.nomeExame}
+        Nome exame
       </Text>
       <Text style={styles.examName}>
-        {props.nomeFuncionario}
+        Funcionário
       </Text>
       <Text style={styles.examName}>
         12/11/2023

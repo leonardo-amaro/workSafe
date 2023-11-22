@@ -26,6 +26,15 @@ export function ModalProcedimento({ navigation }) {
         />
       </View>
       <View style={styles.buttonArea}>
+        <Text style={{ fontSize: 16 }}>
+          Data da realização do exame
+        </Text>
+        <TextInput
+          style={styles.input}
+          placeholder="DD/MM/AAAA"
+        />
+      </View>
+      <View style={styles.buttonArea}>
         <TouchableOpacity style={[styles.button, styles.buttonSave]}>
           <Text style={styles.buttonText}>
             Salvar
