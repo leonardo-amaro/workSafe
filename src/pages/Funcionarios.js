@@ -8,7 +8,8 @@ export function Funcionarios({ navigation }) {
     <View style={styles.container}>
       <HeaderView />
       <Title>Funcionários</Title>
-      <Card />
+      <Card nome="Leonardo Silva" />
+      <Card nome="Ronaldy Gomes" />
       <View style={styles.buttonArea}>
         <TouchableOpacity style={styles.button} onPress={ () => navigation.navigate('ModalFuncionario') }>
           <Text style={styles.buttonText}>

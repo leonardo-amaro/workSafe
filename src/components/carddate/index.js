@@ -1,16 +1,16 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-export function CardDate() {
+export function CardDate(props) {
   return (
     <View style={styles.card}>
       <Text style={styles.examName}>
-        Nome exame
+        {props.exame}
       </Text>
       <Text style={styles.examName}>
-        Funcionário
+        {props.funcionario}
       </Text>
       <Text style={styles.examName}>
-        12/11/2023
+        {props.data}
       </Text>
       <View style={styles.buttonArea}>
         <TouchableOpacity style={[styles.button, styles.buttonEdit]}>

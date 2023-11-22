@@ -8,7 +8,8 @@ export function Exames({ navigation }) {
     <View style={styles.container}>
       <HeaderView />
       <Title>Exames</Title>
-      <Card />
+      <Card nome="Exame de sangue" />
+      <Card nome="Exame de vista" />
       <View style={styles.buttonArea}>
         <TouchableOpacity style={styles.button} onPress={ () => navigation.navigate('ModalExam') }>
           <Text style={styles.buttonText}>
